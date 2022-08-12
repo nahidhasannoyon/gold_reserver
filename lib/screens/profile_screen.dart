@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
+  static const routeName = '/profile';
   const ProfileScreen({Key? key}) : super(key: key);
 
   @override
@@ -17,7 +18,7 @@ class ProfileScreen extends StatelessWidget {
             ListTile(
               leading: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
-                child: Image.asset('assets/images/profile.png'),
+                child: Image.asset('assets/images/profile_icon.png'),
               ),
               title: const Text('Nahid Hasan Noyon'),
               subtitle: const Text('+8801627465928'),
