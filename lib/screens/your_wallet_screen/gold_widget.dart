@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class GoldWidget extends StatelessWidget {
@@ -14,14 +15,27 @@ class GoldWidget extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Text("Gold: ", style: TextStyle(fontSize: 20)),
-            const Text("0",
-                style: TextStyle(fontSize: 20, color: Colors.yellow)),
+            const Expanded(
+              flex: 2,
+              child: Text(
+                "Gold: ",
+                style: TextStyle(fontSize: 20),
+              ),
+            ),
+            const Expanded(
+              flex: 1,
+              child: Text(
+                "0",
+                style: TextStyle(fontSize: 20, color: Colors.yellow),
+              ),
+            ),
             DropdownButton(
               hint: const Text('gm'),
+              isExpanded: false,
               // todo jai option select korbe i hsabe hint thbe
               items: const [
                 DropdownMenuItem(
+                  enabled: true,
                   value: "gm",
                   child: Text("gm"),
                 ),
@@ -31,7 +45,9 @@ class GoldWidget extends StatelessWidget {
                 ),
               ],
               onChanged: (value) {
-                print(value);
+                if (kDebugMode) {
+                  print(value);
+                }
               },
             ),
             IconButton(
