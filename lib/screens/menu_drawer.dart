@@ -49,13 +49,13 @@ class MenuDrawer extends StatelessWidget {
             ),
           ),
           const Divider(thickness: 3),
-          MenuDrawerItem(
+          const MenuDrawerItem(
             icon: Icons.dashboard_rounded,
             text: 'Dashboard',
             navigateTo: DashboardScreen.routeName,
           ),
           const Divider(thickness: 3),
-          MenuDrawerItem(
+          const MenuDrawerItem(
             icon: Icons.account_balance_wallet,
             text: 'Your Wallet',
             navigateTo: YourWalletScreen.routeName,
