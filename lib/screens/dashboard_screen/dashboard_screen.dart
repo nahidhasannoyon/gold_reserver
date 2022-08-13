@@ -18,8 +18,13 @@ class _DashboardScreenState extends State<DashboardScreen> {
       appBar: AppBar(
         title: const Text('Dashboard'),
       ),
-      body: const SingleChildScrollView(
-        child: YourMissionWidget(),
+      body: SingleChildScrollView(
+        child: Column(
+          children: const [
+            YourMissionWidget(),
+            SizedBox(height: 10),
+          ],
+        ),
       ),
     );
   }
