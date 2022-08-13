@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gold_reserver/screens/dashboard_screen/add_new_mission.dart';
 
 class YourMissionWidget extends StatelessWidget {
   const YourMissionWidget({
@@ -7,11 +8,15 @@ class YourMissionWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final DeviceWidth = MediaQuery.of(context).size.width;
-    final LeftPosition = (DeviceWidth - 40) * (0.50 / 2) - 10;
-    final temp = LeftPosition * 2;
-    final RightPosition = LeftPosition * 2 + (DeviceWidth - 40) * (.50 / 2) + 5;
-    // final RightPosition = (DeviceWidth - LeftPosition * 2 - 20 - 20) / 2;
+    double missionCompletedPercentage = 20;
+    int missionCompleteInt = missionCompletedPercentage.toInt();
+    int missionIncomplete = (100 - missionCompleteInt);
+
+    final deviceWidth = MediaQuery.of(context).size.width;
+    final leftPosition = (deviceWidth - 40) * ((missionCompleteInt / 100) / 2);
+    // final RightPosition = LeftPosition * 2 +
+    //     (DeviceWidth - 40) * ((100 - missionCompleteInt) / 100 / 2) -
+    //     5;
     return Container(
       padding: const EdgeInsets.all(10),
       child: Card(
@@ -34,9 +39,15 @@ class YourMissionWidget extends StatelessWidget {
                 height: 10,
                 width: double.infinity,
               ),
-              Text(
-                '1 Bhori Gold',
-                style: Theme.of(context).textTheme.subtitle1,
+              Row(
+                children: [
+                  Text(
+                    '1 Bhori Gold',
+                    style: Theme.of(context).textTheme.subtitle1,
+                  ),
+                  const Spacer(),
+                  const Text(' 9 days left')
+                ],
               ),
               const SizedBox(height: 5),
               SizedBox(
@@ -48,39 +59,45 @@ class YourMissionWidget extends StatelessWidget {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(10),
                       child: LinearProgressIndicator(
-                        value: 0.5,
+                        value: missionCompleteInt / 100.0,
                         minHeight: 30,
                         backgroundColor: Colors.grey[200],
                         color: Colors.blue,
-                        semanticsLabel: '25%',
-                        semanticsValue: '35%',
                       ),
                     ),
                     Positioned(
-                      left: LeftPosition,
+                      left: leftPosition,
                       right: 0,
                       bottom: 0,
                       child: Text(
-                        '25%',
+                        "$missionCompleteInt% Done",
                         style: Theme.of(context).textTheme.subtitle1,
                       ),
                     ),
-                    Positioned(
-                      left: RightPosition,
-                      right: 0,
-                      bottom: 0,
-                      child: Text(
-                        '75%',
-                        style: Theme.of(context).textTheme.subtitle1,
-                      ),
-                    ),
+                    // Positioned(
+                    //   left: RightPosition,
+                    //   right: 0,
+                    //   bottom: 0,
+                    //   child: Text(
+                    //     missionCompleteInt != 100.0
+                    //         ? '$missionIncomplete%'
+                    //         : '',
+                    //     style: Theme.of(context).textTheme.subtitle1,
+                    //   ),
+                    // ),
                   ],
                 ),
               ),
-              const ElevatedButton(
-                onPressed: null,
-                child: Text('Add new mission'),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).pushNamed(AddNewMission.routeName);
+                },
+                child: const Text('Add new mission'),
               ),
+              Text(leftPosition.toString()),
+              //// Text(RightPosition.toString()),
+              Text(missionCompleteInt.toString()),
+              Text(missionIncomplete.toString()),
             ],
           ),
         ),
