@@ -39,7 +39,7 @@ class MenuDrawer extends StatelessWidget {
                   ),
                 ),
                 subtitle: Text(
-                  'nahidhasannoyon@gmail.com',
+                  'nahidhasannoyon20@gmail.com',
                   style: TextStyle(
                     fontSize: 12,
                     color: Colors.white,
