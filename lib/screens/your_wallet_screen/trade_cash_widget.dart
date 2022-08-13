@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class TradeCashWidget extends StatelessWidget {
@@ -14,9 +15,23 @@ class TradeCashWidget extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Text("Trade cash: ", style: TextStyle(fontSize: 20)),
-            const Text("0",
-                style: TextStyle(fontSize: 20, color: Colors.yellow)),
+            const Expanded(
+              flex: 2,
+              child: Text(
+                "Trade cash: ",
+                style: TextStyle(fontSize: 20),
+              ),
+            ),
+            const Expanded(
+              flex: 1,
+              child: Text(
+                "0",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.yellow,
+                ),
+              ),
+            ),
             DropdownButton(
               hint: const Text('BDT'),
               // todo jai option select korbe i hsabe hint thbe
@@ -31,7 +46,9 @@ class TradeCashWidget extends StatelessWidget {
                 ),
               ],
               onChanged: (value) {
-                print(value);
+                if (kDebugMode) {
+                  print(value);
+                }
               },
             ),
             IconButton(
@@ -43,7 +60,7 @@ class TradeCashWidget extends StatelessWidget {
                     content:
                         const Text('It shows the amount of gold you traded.'),
                     actions: [
-                      FlatButton(
+                      ElevatedButton(
                         child: const Text('OK'),
                         onPressed: () {
                           Navigator.of(context).pop();
