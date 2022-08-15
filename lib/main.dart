@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:gold_reserver/page_not_ready.dart';
 import 'package:gold_reserver/screens/add_cash_screen/add_cash_screen.dart';
+import 'package:gold_reserver/screens/buy_sell_gold_screen/buy_sell_gold_screen.dart';
 import 'package:gold_reserver/screens/dashboard_screen/add_new_mission.dart';
 import 'package:gold_reserver/screens/dashboard_screen/dashboard_screen.dart';
 import 'package:gold_reserver/screens/history_screen/history_screen.dart';
@@ -30,6 +32,8 @@ class MyApp extends StatelessWidget {
         AddCashScreen.routeName: (context) => const AddCashScreen(),
         HistoryScreen.routeName: (context) => const HistoryScreen(),
         AddNewMission.routeName: (context) => const AddNewMission(),
+        PageNotReady.routeName: (context) => const PageNotReady(),
+        BuySellGoldScreen.routeName: (context) => const BuySellGoldScreen(),
       },
     );
   }
