@@ -12,6 +12,7 @@ import 'package:gold_reserver/screens/profile_screen.dart';
 import 'package:gold_reserver/screens/selected_shop_screen/selected_shop_screen.dart';
 import 'package:gold_reserver/screens/withdraw_screen.dart/withdraw_screen.dart';
 import 'package:gold_reserver/screens/withdraw_selection_screen/withdraw_selection_screen.dart';
+import 'package:gold_reserver/screens/your_mission_Screen/your_mission_screen.dart';
 import 'package:gold_reserver/screens/your_wallet_screen/your_wallet_screen.dart';
 
 void main() {
@@ -47,6 +48,7 @@ class MyApp extends StatelessWidget {
         WithDrawSelectionScreen.routeName: (context) =>
             const WithDrawSelectionScreen(),
         SelectedShopScreen.routeName: (context) => const SelectedShopScreen(),
+        YourMissionScreen.routeName: (context) => const YourMissionScreen(),
       },
     );
   }
