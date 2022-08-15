@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gold_reserver/screens/edit_profile_screen.dart/edit_profile_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
   static const routeName = '/profile';
@@ -9,6 +10,16 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Profile'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.edit),
+            onPressed: () {
+              Navigator.of(context).pushNamed(
+                EditProfileScreen.routeName,
+              );
+            },
+          ),
+        ],
       ),
       body: Container(
         height: MediaQuery.of(context).size.height * 0.8,
