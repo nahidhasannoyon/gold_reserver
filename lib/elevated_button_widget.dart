@@ -16,7 +16,12 @@ class ElevatedButtonWidget extends StatelessWidget {
       onPressed: () {
         Navigator.of(context).pushNamed(navigateTo);
       },
-      child: Text(text),
+      child: Text(
+        text,
+        style: const TextStyle(
+          fontSize: 20,
+        ),
+      ),
     );
   }
 }
