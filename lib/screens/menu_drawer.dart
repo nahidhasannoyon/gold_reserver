@@ -3,6 +3,7 @@ import 'package:gold_reserver/screens/buy_sell_gold_screen/buy_sell_gold_screen.
 import 'package:gold_reserver/screens/dashboard_screen/dashboard_screen.dart';
 import 'package:gold_reserver/screens/menu_drawer_item.dart';
 import 'package:gold_reserver/screens/profile_screen.dart';
+import 'package:gold_reserver/screens/your_mission_Screen/your_mission_screen.dart';
 import 'package:gold_reserver/screens/your_wallet_screen/your_wallet_screen.dart';
 
 class MenuDrawer extends StatelessWidget {
@@ -66,6 +67,12 @@ class MenuDrawer extends StatelessWidget {
             icon: Icons.account_balance_wallet,
             text: 'Buy / Sell Gold',
             navigateTo: BuySellGoldScreen.routeName,
+          ),
+          const Divider(thickness: 3),
+          const MenuDrawerItem(
+            icon: Icons.track_changes_outlined,
+            text: 'Your Mission',
+            navigateTo: YourMissionScreen.routeName,
           ),
         ],
       ),
