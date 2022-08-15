@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gold_reserver/screens/buy_sell_gold_screen/buy_sell_gold_screen.dart';
 import 'package:gold_reserver/screens/dashboard_screen/dashboard_screen.dart';
 import 'package:gold_reserver/screens/menu_drawer_item.dart';
 import 'package:gold_reserver/screens/profile_screen.dart';
@@ -59,6 +60,12 @@ class MenuDrawer extends StatelessWidget {
             icon: Icons.account_balance_wallet,
             text: 'Your Wallet',
             navigateTo: YourWalletScreen.routeName,
+          ),
+          const Divider(thickness: 3),
+          const MenuDrawerItem(
+            icon: Icons.account_balance_wallet,
+            text: 'Buy / Sell Gold',
+            navigateTo: BuySellGoldScreen.routeName,
           ),
         ],
       ),
