@@ -21,7 +21,7 @@ class BuySellGoldWidget extends StatelessWidget {
                 width: double.infinity,
                 padding: const EdgeInsets.all(8.0),
                 child: const Text(
-                  'Gold rate is 62,000/- per Bhori',
+                  'Gold rate is 62,000/- per gm',
                   style: TextStyle(
                     color: Colors.blue,
                     fontSize: 23,

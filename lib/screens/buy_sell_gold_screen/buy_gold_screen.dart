@@ -33,7 +33,7 @@ class _BuyGoldScreenState extends State<BuyGoldScreen> {
                   padding: const EdgeInsets.all(10.0),
                   child: Row(
                     children: [
-                      // todo cash amount dekhabe.
+                      // Todo: Show cash amount
                       Flexible(
                         child: TextFormField(
                           controller: _amountController,

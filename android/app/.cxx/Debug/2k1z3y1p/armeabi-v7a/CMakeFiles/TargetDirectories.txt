@@ -1,0 +1,2 @@
+/Users/sk/Desktop/Flutter_development/Workstation_Nahid_Hasan_noyon/gold_reserver/android/app/.cxx/Debug/2k1z3y1p/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/sk/Desktop/Flutter_development/Workstation_Nahid_Hasan_noyon/gold_reserver/android/app/.cxx/Debug/2k1z3y1p/armeabi-v7a/CMakeFiles/rebuild_cache.dir
