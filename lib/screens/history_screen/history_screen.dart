@@ -3,7 +3,7 @@ import 'package:gold_reserver/screens/history_screen/bdt_history_widget.dart';
 
 class HistoryScreen extends StatefulWidget {
   static const routeName = '/history';
-  const HistoryScreen({Key? key}) : super(key: key);
+  const HistoryScreen({super.key});
 
   @override
   State<HistoryScreen> createState() => _HistoryScreenState();
@@ -37,7 +37,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
         data: NavigationBarThemeData(
           indicatorColor: Colors.blue,
           backgroundColor: const Color.fromARGB(255, 250, 114, 114),
-          labelTextStyle: MaterialStateProperty.all(
+          labelTextStyle: WidgetStateProperty.all(
             const TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.bold,

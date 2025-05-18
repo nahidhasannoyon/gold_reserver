@@ -9,8 +9,8 @@ import 'package:gold_reserver/screens/your_wallet_screen/trade_cash_widget.dart'
 
 class YourWalletWidget extends StatelessWidget {
   const YourWalletWidget({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class PageNotReady extends StatelessWidget {
   static const routeName = '/page_not_ready';
-  const PageNotReady({Key? key}) : super(key: key);
+  const PageNotReady({super.key});
 
   @override
   Widget build(BuildContext context) {

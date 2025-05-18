@@ -5,7 +5,7 @@ import 'package:pull_to_refresh/pull_to_refresh.dart';
 
 class YourMissionScreen extends StatefulWidget {
   static const routeName = '/your_mission';
-  const YourMissionScreen({Key? key}) : super(key: key);
+  const YourMissionScreen({super.key});
 
   @override
   State<YourMissionScreen> createState() => _YourMissionScreenState();

@@ -3,7 +3,7 @@ import 'package:gold_reserver/page_not_ready.dart';
 
 class SelectedShopScreen extends StatefulWidget {
   static const routeName = '/selected_shop';
-  const SelectedShopScreen({Key? key}) : super(key: key);
+  const SelectedShopScreen({super.key});
 
   @override
   State<SelectedShopScreen> createState() => _SelectedShopScreenState();

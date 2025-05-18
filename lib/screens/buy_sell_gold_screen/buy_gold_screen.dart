@@ -6,7 +6,7 @@ import 'package:gold_reserver/screens/your_wallet_screen/trade_cash_widget.dart'
 
 class BuyGoldScreen extends StatefulWidget {
   static const routeName = '/buy-gold';
-  const BuyGoldScreen({Key? key}) : super(key: key);
+  const BuyGoldScreen({super.key});
 
   @override
   State<BuyGoldScreen> createState() => _BuyGoldScreenState();

@@ -4,7 +4,7 @@ import 'package:intl/intl.dart';
 
 class AddNewMission extends StatefulWidget {
   static const routeName = '/add-new-mission';
-  const AddNewMission({Key? key}) : super(key: key);
+  const AddNewMission({super.key});
 
   @override
   State<AddNewMission> createState() => _AddNewMissionState();

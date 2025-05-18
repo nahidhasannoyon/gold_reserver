@@ -3,7 +3,7 @@ import 'package:gold_reserver/screens/edit_profile_screen.dart/edit_profile_scre
 
 class ProfileScreen extends StatelessWidget {
   static const routeName = '/profile';
-  const ProfileScreen({Key? key}) : super(key: key);
+  const ProfileScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

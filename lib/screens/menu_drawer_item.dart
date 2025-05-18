@@ -6,11 +6,11 @@ class MenuDrawerItem extends StatefulWidget {
   final String navigateTo;
 
   const MenuDrawerItem({
-    Key? key,
+    super.key,
     required this.icon,
     required this.text,
     required this.navigateTo,
-  }) : super(key: key);
+  });
 
   @override
   State<MenuDrawerItem> createState() => _MenuDrawerItemState();

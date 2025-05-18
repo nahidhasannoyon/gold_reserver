@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AddCashScreen extends StatefulWidget {
   static const routeName = '/add-cash';
-  const AddCashScreen({Key? key}) : super(key: key);
+  const AddCashScreen({super.key});
 
   @override
   State<AddCashScreen> createState() => _AddCashScreenState();

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gold_reserver/page_not_ready.dart';
 
 class BdtHistoryPage extends StatelessWidget {
-  const BdtHistoryPage({Key? key}) : super(key: key);
+  const BdtHistoryPage({super.key});
 
   @override
   Widget build(BuildContext context) {

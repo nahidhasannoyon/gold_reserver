@@ -6,7 +6,7 @@ import 'package:gold_reserver/screens/your_wallet_screen/your_wallet_widget.dart
 
 class DashboardScreen extends StatefulWidget {
   static const routeName = '/dashboard';
-  const DashboardScreen({Key? key}) : super(key: key);
+  const DashboardScreen({super.key});
 
   @override
   State<DashboardScreen> createState() => _DashboardScreenState();

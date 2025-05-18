@@ -3,8 +3,8 @@ import 'package:gold_reserver/page_not_ready.dart';
 
 class BuySellFromP2PWidget extends StatelessWidget {
   const BuySellFromP2PWidget({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -4,8 +4,8 @@ import 'package:gold_reserver/screens/buy_sell_gold_screen/buy_sell_gold_card_wi
 
 class BuySellGoldWidget extends StatelessWidget {
   const BuySellGoldWidget({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

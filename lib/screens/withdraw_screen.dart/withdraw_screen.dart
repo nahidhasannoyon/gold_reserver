@@ -5,7 +5,7 @@ import 'package:gold_reserver/screens/your_wallet_screen/trade_cash_widget.dart'
 
 class WithDrawScreen extends StatefulWidget {
   static const routeName = '/withdraw';
-  const WithDrawScreen({Key? key}) : super(key: key);
+  const WithDrawScreen({super.key});
 
   @override
   State<WithDrawScreen> createState() => _WithDrawScreenState();

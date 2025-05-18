@@ -3,7 +3,7 @@ import 'package:gold_reserver/page_not_ready.dart';
 
 class EditProfileScreen extends StatelessWidget {
   static const routeName = '/edit_profile';
-  const EditProfileScreen({Key? key}) : super(key: key);
+  const EditProfileScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class EditProfileScreen extends StatelessWidget {
 
 // Create a Form widget.
 class MyCustomForm extends StatefulWidget {
-  const MyCustomForm({Key? key}) : super(key: key);
+  const MyCustomForm({super.key});
 
   @override
   MyCustomFormState createState() {

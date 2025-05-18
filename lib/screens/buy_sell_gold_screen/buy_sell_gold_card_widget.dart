@@ -4,8 +4,8 @@ import 'package:gold_reserver/screens/buy_sell_gold_screen/sell_gold_screen.dart
 
 class BuySellGoldCardWidget extends StatelessWidget {
   const BuySellGoldCardWidget({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

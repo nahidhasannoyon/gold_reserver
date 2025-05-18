@@ -5,7 +5,7 @@ import 'package:gold_reserver/screens/selected_shop_screen/selected_shop_screen.
 
 class WithDrawSelectionScreen extends StatefulWidget {
   static const routeName = '/withdraw-selection';
-  const WithDrawSelectionScreen({Key? key}) : super(key: key);
+  const WithDrawSelectionScreen({super.key});
 
   @override
   State<WithDrawSelectionScreen> createState() =>

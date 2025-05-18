@@ -4,7 +4,7 @@ import 'package:gold_reserver/screens/your_wallet_screen/your_wallet_widget.dart
 
 class YourWalletScreen extends StatefulWidget {
   static const routeName = '/your_wallet';
-  const YourWalletScreen({Key? key}) : super(key: key);
+  const YourWalletScreen({super.key});
 
   @override
   State<YourWalletScreen> createState() => _YourWalletScreenState();

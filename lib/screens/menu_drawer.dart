@@ -7,7 +7,7 @@ import 'package:gold_reserver/screens/your_mission_Screen/your_mission_screen.da
 import 'package:gold_reserver/screens/your_wallet_screen/your_wallet_screen.dart';
 
 class MenuDrawer extends StatelessWidget {
-  const MenuDrawer({Key? key}) : super(key: key);
+  const MenuDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {
