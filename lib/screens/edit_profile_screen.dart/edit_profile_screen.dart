@@ -31,35 +31,35 @@ class MyCustomFormState extends State<MyCustomForm> {
   // Create a global key that uniquely identifies the Form widget
   // and allows validation of the form.
   final _formKey = GlobalKey<FormState>();
-  DateTime _selectedDate = DateTime.now();
+  // DateTime _selectedDate = DateTime.now();
   bool isDatePicked = false;
 
-  void _datePicker() {
-    showDatePicker(
-      context: context,
-      initialDate: DateTime.now(),
-      firstDate: DateTime.now(),
-      lastDate: DateTime(2200),
-    ).then(
-      (pickedDate) {
-        if (pickedDate == null) {
-          isDatePicked = false;
-          return;
-        } else {
-          setState(() {
-            _selectedDate = pickedDate;
-            isDatePicked = true;
-          });
-        }
-      },
-    );
-  }
+  // void _datePicker() {
+  //   showDatePicker(
+  //     context: context,
+  //     initialDate: DateTime.now(),
+  //     firstDate: DateTime.now(),
+  //     lastDate: DateTime(2200),
+  //   ).then(
+  //     (pickedDate) {
+  //       if (pickedDate == null) {
+  //         isDatePicked = false;
+  //         return;
+  //       } else {
+  //         setState(() {
+  //           _selectedDate = pickedDate;
+  //           isDatePicked = true;
+  //         });
+  //       }
+  //     },
+  //   );
+  // }
 
-  void _submitData() {
-    if (isDatePicked != false) {
-      Navigator.of(context).pop();
-    }
-  }
+  // void _submitData() {
+  //   if (isDatePicked != false) {
+  //     Navigator.of(context).pop();
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -202,8 +202,10 @@ class MyCustomFormState extends State<MyCustomForm> {
                     // It returns true if the form is valid, otherwise returns false
                     if (_formKey.currentState!.validate()) {
                       // If the form is valid, display a Snackbar.
-                      Scaffold.of(context).showSnackBar(const SnackBar(
+                      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                           content: Text('Data is in processing.')));
+                      // Scaffold.of(context).showSnackBar(const SnackBar(
+                      //     content: Text('Data is in processing.')));
                     }
                   },
                 ),

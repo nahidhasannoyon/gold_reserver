@@ -12,12 +12,12 @@ class BuySellFromP2PWidget extends StatelessWidget {
       onTap: () {
         Navigator.of(context).pushNamed(PageNotReady.routeName);
       },
-      child: Card(
+      child: const Card(
         elevation: 5,
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(8.0),
           child: Row(
-            children: const [
+            children: [
               Text(
                 'Buy/Sell from P2P',
                 style: TextStyle(

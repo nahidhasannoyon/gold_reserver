@@ -20,12 +20,10 @@ class BdtHistoryPage extends StatelessWidget {
                   const Spacer(),
                   TextButton(
                     style: ButtonStyle(
-                        shape:
-                            MaterialStateProperty.all<RoundedRectangleBorder>(
-                                RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(18.0),
-                                    side:
-                                        const BorderSide(color: Colors.red)))),
+                        shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(18.0),
+                                side: const BorderSide(color: Colors.red)))),
                     onPressed: () {
                       Navigator.of(context).pushNamed(PageNotReady.routeName);
                     },
@@ -34,12 +32,10 @@ class BdtHistoryPage extends StatelessWidget {
                   const Spacer(),
                   TextButton(
                     style: ButtonStyle(
-                        shape:
-                            MaterialStateProperty.all<RoundedRectangleBorder>(
-                                RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(18.0),
-                                    side:
-                                        const BorderSide(color: Colors.red)))),
+                        shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(18.0),
+                                side: const BorderSide(color: Colors.red)))),
                     onPressed: () {
                       Navigator.of(context).pushNamed(PageNotReady.routeName);
                     },
@@ -48,12 +44,10 @@ class BdtHistoryPage extends StatelessWidget {
                   const Spacer(),
                   TextButton(
                     style: ButtonStyle(
-                        shape:
-                            MaterialStateProperty.all<RoundedRectangleBorder>(
-                                RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(18.0),
-                                    side:
-                                        const BorderSide(color: Colors.red)))),
+                        shape: WidgetStateProperty.all<RoundedRectangleBorder>(
+                            RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(18.0),
+                                side: const BorderSide(color: Colors.red)))),
                     onPressed: () {
                       Navigator.of(context).pushNamed(PageNotReady.routeName);
                     },
@@ -62,11 +56,11 @@ class BdtHistoryPage extends StatelessWidget {
                 ],
               ),
             ),
-            Card(
+            const Card(
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(8.0),
                 child: Row(
-                  children: const [
+                  children: [
                     Text(
                       'Date time ',
                       style: TextStyle(fontSize: 18),
@@ -86,11 +80,11 @@ class BdtHistoryPage extends StatelessWidget {
                 child: ListView.builder(
                   itemCount: 20,
                   itemBuilder: (context, index) {
-                    return Card(
+                    return const Card(
                       child: Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: EdgeInsets.all(8.0),
                         child: Row(
-                          children: const [
+                          children: [
                             Text(
                               '220-08-2022',
                               style: TextStyle(fontSize: 18),

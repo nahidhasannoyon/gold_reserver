@@ -21,11 +21,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
         title: const Text('Dashboard'),
       ),
       backgroundColor: Colors.grey,
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: EdgeInsets.all(10.0),
           child: Column(
-            children: const [
+            children: [
               YourMissionWidget(),
               BuySellGoldWidget(),
               YourWalletWidget(),

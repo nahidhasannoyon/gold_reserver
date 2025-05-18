@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CashCardWidget extends StatelessWidget {
-  final cashType;
-  final cashAmount;
-  final cashDescription;
+  final String cashType;
+  final String cashAmount;
+  final String cashDescription;
 
   const CashCardWidget({
     super.key,

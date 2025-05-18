@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 class MenuDrawerItem extends StatefulWidget {
   final IconData icon;
   final String text;
-  final navigateTo;
+  final String navigateTo;
 
   const MenuDrawerItem({
     Key? key,
     required this.icon,
     required this.text,
-    this.navigateTo,
+    required this.navigateTo,
   }) : super(key: key);
 
   @override

@@ -19,7 +19,7 @@ class YourMissionWidget extends StatelessWidget {
             Center(
               child: Text(
                 'Your Mission',
-                style: Theme.of(context).textTheme.headline5,
+                style: Theme.of(context).textTheme.bodyMedium,
               ),
             ),
             const Divider(
@@ -70,7 +70,7 @@ class YourMissionWidget extends StatelessWidget {
                       ),
                     ),
                     onDismissed: (direction) {
-                      Scaffold.of(context).showSnackBar(
+                      ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
                           content: Text('Mission dismissed'),
                         ),
@@ -92,11 +92,11 @@ class YourMissionWidget extends StatelessWidget {
                       ),
                       title: const Text('For MOM'),
                       subtitle: const Text('9 month\'s left'),
-                      trailing: Column(
+                      trailing: const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          Text('Traget: 1 Bhori'),
-                          Text('Progress: .5 Bhori'),
+                        children: [
+                          Text('Target: 1 gm'),
+                          Text('Progress: .5 gm'),
                         ],
                       ),
                     ),

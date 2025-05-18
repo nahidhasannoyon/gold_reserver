@@ -66,8 +66,8 @@ class _WithDrawScreenState extends State<WithDrawScreen> {
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
                     children: [
-                      Row(
-                        children: const [
+                      const Row(
+                        children: [
                           Expanded(
                             child: TextField(
                               decoration: InputDecoration(
@@ -189,8 +189,8 @@ class _WithDrawScreenState extends State<WithDrawScreen> {
                           ),
                         ],
                       ),
-                      Row(
-                        children: const [
+                      const Row(
+                        children: [
                           CircularProgressIndicator(),
                           SizedBox(
                             width: 10,

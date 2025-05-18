@@ -24,7 +24,7 @@ class _SelectedShopScreenState extends State<SelectedShopScreen> {
                 children: [
                   const ListTile(
                     leading: Icon(Icons.shop),
-                    title: Text('Khan Jewler\'s Shop'),
+                    title: Text('Khan Jeweler\'s Shop'),
                     subtitle: Text('Dhaka'),
                   ),
                   const Divider(
@@ -33,8 +33,8 @@ class _SelectedShopScreenState extends State<SelectedShopScreen> {
                   Card(
                     child: Column(
                       children: [
-                        Row(
-                          children: const [
+                        const Row(
+                          children: [
                             Text('Appointment Time:  '),
                             Expanded(
                               child: TextField(
@@ -61,7 +61,7 @@ class _SelectedShopScreenState extends State<SelectedShopScreen> {
                   ),
                   const Card(
                     child: ListTile(
-                      title: Text('Purches request',
+                      title: Text('Purchase request',
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                           )),
